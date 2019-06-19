@@ -1,0 +1,11 @@
+collections:
+  - features
+  - goals
+  - scenarios
+  - users
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge

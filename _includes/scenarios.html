@@ -1,0 +1,73 @@
+<!-- scenarios -->
+<div class="container-fluid alt-color">
+  <br />
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-3 connect"><hr/></div>
+      <div class="col-lg-4 col-md-6 connect section-heading">
+        <h2 class="lead secondary-heading">
+          Common Scenarios
+        </h2>
+      </div>
+      <div class="col-lg-4 col-md-3 connect"><hr/></div>
+    </div>
+
+    <br />
+
+    <div class="row">
+
+      <ul class="nav nav-tabs nav-justified" id="scenarios-tab" role="tablist">
+      {% assign items = site.scenarios %}
+      {% for item in items %}
+        <li class="nav-item">
+          {% if forloop.first %}
+          <a class="nav-link active"
+             id="{{ item.short }}-tab"
+             data-toggle="tab"
+             href="#tab-{{ item.short }}"
+             role="tab"
+             aria-controls="{{ item.short }}"
+             aria-selected="true">
+            {{ item.title }}
+          </a>
+          {% else %}
+          <a class="nav-link"
+             id="{{ item.short }}-tab"
+             data-toggle="tab"
+             href="#tab-{{ item.short }}"
+             role="tab"
+             aria-controls="{{ item.short }}"
+             aria-selected="false">
+            {{ item.title }}
+          </a>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+
+    </div>
+
+    <div class="tab-content" id="scenarios-tab-content">
+    {% assign items = site.scenarios %}
+    {% for item in items %}
+      {% if forloop.first %}
+      <div class="tab-pane active" id="tab-{{ item.short }}" role="tabpanel" aria-labelledby="{{ item.short }}-tab">
+      {% else %}
+      <div class="tab-pane" id="tab-{{ item.short }}" role="tabpanel" aria-labelledby="{{ item.short }}-tab">
+      {% endif %}
+        <img src="/img/{{ item.image }}" class="pb-2 scenarios-image" style="width: 400px; height: 280px" />
+        <div class="container-fluid">
+          <h4>{{ item.description }}</h4>
+          {{ item.content }}
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+
+    <br/>
+
+  </div>
+
+</div>
+<!-- end scenarios -->

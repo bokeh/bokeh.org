@@ -1,0 +1,35 @@
+<!-- bokeh at a glance -->
+<div class="container pt-sm-2">
+  <br />
+
+  <div class="row">
+    <div class="col-lg-4 col-md-3 glance-features "><hr/></div>
+    <div class="col-lg-4 col-md-6 glance-features section-heading">
+      <h2 class="lead secondary-heading">
+        Bokeh at a Glance
+      </h2>
+    </div>
+    <div class="col-lg-4 col-md-3 glance-features"><hr/></div>
+  </div>
+
+  <br />
+
+  <div class="row">
+  {% assign items = site.features | sort: 'order' %}
+  {% for item in items %}
+    <div class="col-lg-4 col-md-6 feature">
+      <h4>{{ item.description }}</h4>
+      <p> {{ item.content | markdownify }}</p>
+    </div>
+  {% endfor %}
+  </div>
+
+</div>
+<!-- end bokeh at a glance -->
+
+
+
+
+
+
+
