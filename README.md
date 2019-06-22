@@ -1,6 +1,6 @@
-# Bokeh Front Page
+# Bokeh Main Site
 
-This is the GitHub repository for the Bokeh Project Main Site, [bokeh.org](https://bokeh.org). The repository for the source code of the Bokeh itself can be found at [github.com/bokeh/bokeh](https://github.com/bokeh/bokeh).
+This is the GitHub repository for the Bokeh Project Main Site, [bokeh.org](https://bokeh.org). The Main Site is a portal to guide users to other project resources and sites. The repository for the source code of Bokeh itself can be found at [github.com/bokeh/bokeh](https://github.com/bokeh/bokeh).
 
 Full docs for setting up a GitHub Pages Jekyll blog [can be found here](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
 
