@@ -1,3 +1,7 @@
+site: Bokeh Front Page
+
+ga_id: "UA-127553611-4"
+
 collections:
   - features
   - goals
@@ -9,3 +13,6 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+plugins:
+  - jekyll-sitemap
