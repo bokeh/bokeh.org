@@ -1,6 +1,6 @@
 ---
 name: Panel
-image: panel.png
+image: panel.gif
 order: 2
 ---
 [Panel](https://panel.pyviz.org/index.html) is tool for polished data presentation that utilizes the Bokeh server.
