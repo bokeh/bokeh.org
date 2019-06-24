@@ -78,6 +78,10 @@
   text-justify: inter-character;
 }
 
+.partner div {
+  padding-bottom: 10px;
+}
+
 .partner h4 {
   text-align: left;
   padding-bottom: 3px;
@@ -97,25 +101,27 @@
   font-family: "Lato", sans-serif;
 }
 
-.btn-primary {
-  filter: brightness(95%);
-  background-color: #ECD078;
-  border-color: #ECD078;
-}
-
-.btn-primary:hover {
-  filter: brightness(100%);
-  background-color: #ECD078;
-  border-color: #ECD078;
-}
-
 .btn-success {
+  filter: brightness(95%);
+  color: #53777A;
+  background-color: #ECD078;
+  border-color: #ECD078;
+}
+
+.btn-success:hover {
+  filter: brightness(100%);
+  color: #53777A;
+  background-color: #ECD078;
+  border-color: #ECD078;
+}
+
+.btn-primary {
   filter: brightness(95%);
   background-color: #C02942;
   border-color: #C02942;
 }
 
-.btn-success:hover {
+.btn-primary:hover {
   filter: brightness(100%);
   background-color: #C02942;
   border-color: #C02942;
