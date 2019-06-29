@@ -1,0 +1,51 @@
+<div class="row section-heading">
+  <div class="col-lg-4 col-md-3"><hr/></div>
+  <div class="col-lg-4 col-md-6">
+    <h2>Vision</h2>
+  </div>
+  <div class="col-lg-4 col-md-3"><hr/></div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <p>
+      Bokeh is an interactive visualization library that targets modern web browsers for presentation.
+      Its goal is to provide elegant, concise construction of versatile graphics, and to extend this capability with high-performance interactivity over very large or streaming datasets.
+      Bokeh can help anyone who would like to quickly and easily create interactive plots, dashboards, and data applications.
+    </p>
+  </div>
+</div>
+
+<br />
+<br />
+
+<div class="row section-heading">
+  <div class="col-lg-4 col-md-3"><hr/></div>
+  <div class="col-lg-4 col-md-6">
+    <h2>Roadmap</h2>
+  </div>
+  <div class="col-lg-4 col-md-3"><hr/></div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+      <p>
+        The development pace of Bokeh is contigent on external funding opportunities, so this roadmap does not mean to imply any specific dates or deadlines.
+        Listed below are the major areas of work the Core Team considers important.
+        These are tasks and projects that we would like to do ourselves, when time and resources permit, or that we would be happy to have done by new contributors.
+      </p>
+    </div>
+  </div>
+
+
+<br />
+
+<div class="row">
+{% assign items = site.goals %}
+{% for item in items %}
+  <div class="col-lg-12 col-md-12 goal">
+    <h4>{{ item.description }}</h4>
+    <p> {{ item.content | markdownify }}</p>
+  </div>
+{% endfor %}
+</div>
