@@ -1,13 +1,13 @@
 # Bokeh Official Website
 
-This repository contains the source code for [bokeh.org](https://bokeh.org), the official [bokeh](https://github.com/bokeh/bokeh) website.
+This repository contains the source code for the official website [bokeh.org](https://bokeh.org). The source code and issue tracker for Bokeh itself can be found at [github.com/bokeh/bokeh](https://github.com/bokeh/bokeh).
 
 <img src="img/website.png">
 
 # Table of Contents
 
 * [Developing with Docker](#developing-with-docker)
-* [Developing](#developing)
+* [Developing with Bundler](#developing-with-bundler)
 
 ## Developing with Docker
 
@@ -30,7 +30,7 @@ make serve
 
 While running Jekyll will automatically rebuild the site and refresh the browser when changes are made to the source code.
 
-## Developing
+## Developing with Bundler
 
 Based on instructions for [setting up GitHub Pages locally with Jekyll](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
 
@@ -42,7 +42,7 @@ Verify the above requirements by running `ruby --version && bundle --version` fr
 
 1. Clone the project repository
 2. Add a [`github-pages`](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#step-2-install-jekyll-using-bundler) Gemfile to the project root directory
-3. Install the bundle dependencies from the project root direcotry
+3. Install the bundle dependencies from the project root directory
 4. Serve the website using Jekyll
 5. Natigate to `http://localhost:4000`
 
