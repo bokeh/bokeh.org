@@ -1,27 +1,57 @@
-# Bokeh Main Site
+# Bokeh Official Website
 
-This is the GitHub repository for the Bokeh Project Main Site, [bokeh.org](https://bokeh.org). The Main Site is a portal to guide users to other project resources and sites. The repository for the source code of Bokeh itself can be found at [github.com/bokeh/bokeh](https://github.com/bokeh/bokeh).
+This repository contains the source code for the official website [bokeh.org](https://bokeh.org). The source code and issue tracker for Bokeh itself can be found at [github.com/bokeh/bokeh](https://github.com/bokeh/bokeh).
 
-Full docs for setting up a GitHub Pages Jekyll blog [can be found here](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
+<img src="img/website.png">
 
-# Building Locally
+# Table of Contents
 
-## Using Docker
+* [Developing with Docker](#developing-with-docker)
+* [Developing with Bundler](#developing-with-bundler)
 
-After installing [`docker`](http://docker.com/), run `make serve` to build and run the website within the a container built from the [`jekyll/jekyll` image](https://hub.docker.com/r/jekyll/jekyll/) that contains all the necessary prerequisites. The site will be available at `http://localhost:4000`. Modifying source files will cause the website to rebuild in real time (refresh the browser page to see changes).
+## Developing with Docker
 
-## Manually
+#### Requirements:
+ - [Docker](https://docs.docker.com/v17.12/install/)
 
-To build manually, you will need to have Ruby>=2.1 installed on your system. If necessary, run 
+Verify the above requirements by running `docker version` from the command line.
 
-    gem install bundler
-    
-The first time you build locally you will need to install necessary dependcies. In the top level direcotory of this repository, run:
+1. Clone the project repository
+2. Remove any Gemfile[.lock] from the project root directory
+3. Run `make serve` to build and serve the website from within a [`jekyll`](https://hub.docker.com/r/jekyll/jekyll/) container.
+4. Natigate to `http://localhost:4000`
 
-    bundle install
-    
-Then, to serve the site, run:
+```
+git clone https://github.com/bokeh/bokeh.org.git
+cd bokeh.org
+rm -f Gemfile Gemfile.lock
+make serve
+```
 
-    bundle exec jekyll serve
-    
-The site will be available at `http://localhost:4000`. While this program remains running, you can edit the source files and Jekyll will automatically rebuild the site (refresh the browser page to see changes).
+While running Jekyll will automatically rebuild the site and refresh the browser when changes are made to the source code.
+
+## Developing with Bundler
+
+Based on instructions for [setting up GitHub Pages locally with Jekyll](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
+
+#### Requirements:
+ - [Ruby](https://www.ruby-lang.org/en/documentation/installation/) >=2.1
+ - [Bundler](https://bundler.io/)
+
+Verify the above requirements by running `ruby --version && bundle --version` from the command line.
+
+1. Clone the project repository
+2. Add a [`github-pages`](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#step-2-install-jekyll-using-bundler) Gemfile to the project root directory
+3. Install the bundle dependencies from the project root directory
+4. Serve the website using Jekyll
+5. Natigate to `http://localhost:4000`
+
+```
+git clone https://github.com/bokeh/bokeh.org.git
+cd bokeh.org
+echo -e "source 'https://rubygems.org'\ngem 'github-pages', group: :jekyll_plugins" > Gemfile
+bundle install
+bundle exec jekyll serve
+```
+
+While running Jekyll will automatically rebuild the site and refresh the browser when changes are made to the source code.
