@@ -54,7 +54,7 @@
       {% else %}
       <div class="tab-pane" id="tab-{{ item.short }}" role="tabpanel" aria-labelledby="{{ item.short }}-tab">
       {% endif %}
-        <img src="/img/{{ item.image }}" class="pb-2 scenarios-image" style="width: 400px; height: 280px" />
+        <img src="/img/{{ item.image }}" alt="{{ item.title }}" class="pb-2 scenarios-image" style="width: 400px; height: 280px" />
         <div class="container-fluid">
           <h4>{{ item.description }}</h4>
           {{ item.content }}
