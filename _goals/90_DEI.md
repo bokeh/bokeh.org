@@ -1,5 +1,5 @@
 ---
-description: Improve Diversity, Equity, and Inclusion among contributors and users
+description: Improve Diversity, Equity, and Inclusion among Contributors and Users
 ---
 We have repeatedly experienced that diversity, resulting from an inclusive
 culture, is intrinsically good for the project and a crucial factor in making
