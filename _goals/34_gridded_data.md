@@ -10,5 +10,5 @@ sensors, such as microphones or temperature probes, electrode arrays,
 camera or microscope images, and so on. Bokeh's performance, ease of
 use, and ease of application can be greatly improved to cover these
 cases well, building on the existing efficient binary transport mechanisms
-while improving performance, adding user interface elements to 
+while improving performance, adding user interface elements to
 work with streaming data, and showing examples for researchers to follow.
