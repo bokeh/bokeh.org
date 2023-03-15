@@ -2,7 +2,7 @@
 
 This repository contains the source code for the official website [bokeh.org](https://bokeh.org). The source code and issue tracker for Bokeh itself can be found at [github.com/bokeh/bokeh](https://github.com/bokeh/bokeh).
 
-<img src="img/website.png">
+<img src="img/bokeh_website.png">
 
 ## Developing with Docker
 
