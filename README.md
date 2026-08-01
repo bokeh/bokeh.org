@@ -2,7 +2,7 @@
 
 This repository contains the source for [bokeh.org](https://bokeh.org). The Bokeh library itself lives in [bokeh/bokeh](https://github.com/bokeh/bokeh).
 
-The site is built with Jekyll, using plain HTML, CSS, and JavaScript. The redesigned home and branding pages use the `modern` layout; the remaining project pages continue to use the existing layouts.
+The site is built with Jekyll, using plain HTML, CSS, and JavaScript. The home and branding pages share the `modern` layout.
 
 ## Build and view the site locally
 
@@ -39,22 +39,22 @@ make build JEKYLL_IMAGE=jekyll/jekyll:pages
 
 - `index.html` — front page content
 - `branding/index.html` — brand resources page
-- `_layouts/modern.html` — shared document structure for redesigned pages
+- `_layouts/modern.html` — shared document structure for the home and branding pages
 - `_includes/modern-*.html` — shared head, header, and footer
-- `css/modern.css` — redesigned pages' styles
+- `css/modern.css` — home and branding page styles
 - `js/modern.js` — installer tabs and copy-button behavior
 - `img/modern/` — screenshots, animations, and Bokeh brand assets
 
-## Deployment after merge
+## Deployment
 
-The repository's GitHub Pages configuration currently publishes from the root of the `main` branch using the legacy Jekyll build. Merging a pull request into `main` triggers the Pages rebuild automatically, so this redesign does **not** require a workflow or repository-setting change.
+GitHub Pages publishes from the repository root on the `main` branch using its built-in Jekyll build. Merging a pull request into `main` triggers a Pages rebuild automatically. No workflow or repository-setting change is required.
 
 Keep these deployment details intact:
 
 - Leave `CNAME` in the repository root so the custom `bokeh.org` domain is retained.
-- Keep pages and assets compatible with the GitHub Pages Jekyll environment. This implementation does not require Node or a separate asset build.
+- Keep pages and assets compatible with the GitHub Pages Jekyll environment. The site does not require Node or a separate asset build.
 - Check the repository's **Settings → Pages** build result after merge and verify the home page and `/branding/` on the custom domain.
 
-The redesigned footer points its **Citation** link to `https://github.com/bokeh/bokeh/wiki/Citing-Bokeh`. Create that wiki page (or update the link to its final location) before the production release; until then, GitHub redirects the URL to the wiki home. This is a content follow-up, not a Pages deployment change.
+The footer's **Citation** link points to `https://github.com/bokeh/bokeh/wiki/Citing-Bokeh`. Ensure that wiki page exists before publishing; otherwise, GitHub redirects the URL to the wiki home.
 
-If the project later moves from the legacy branch build to GitHub Actions, add a Pages workflow that runs `jekyll build`, uploads `_site/`, and deploys it, then change **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. That migration is optional and is not needed for this branch.
+To publish with GitHub Actions instead, add a Pages workflow that runs `jekyll build`, uploads `_site/`, and deploys it, then change **Settings → Pages → Build and deployment → Source** to **GitHub Actions**.
