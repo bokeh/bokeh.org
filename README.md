@@ -43,7 +43,7 @@ make build JEKYLL_IMAGE=jekyll/jekyll:pages
 - `_includes/modern-*.html` — shared head, header, and footer
 - `css/modern.css` — home and branding page styles
 - `js/modern.js` — installer tabs and copy-button behavior
-- `img/modern/` — screenshots, animations, and Bokeh brand assets
+- `img/` — screenshots, animations, and Bokeh brand assets
 
 ## Deployment
 
