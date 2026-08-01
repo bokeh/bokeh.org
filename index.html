@@ -1,13 +1,276 @@
 ---
-layout: main
-title:  Bokeh
+layout: modern
+title: Bokeh | Interactive data visualization for Python
+description: Create interactive plots, dashboards, and data applications in Python for notebooks and modern web browsers.
+body_class: home-page
 ---
-{% include hero.html %}
 
-{% include glance.html %}
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span>Interactive visualization for Python</p>
+      <h1>Build interactive visualizations <em>for modern browsers.</em></h1>
+      <p class="hero-lede">
+        Bokeh is a Python library for browser-based plots, dashboards, and data applications.
+        Start with high-level plotting tools. Use layouts, widgets, and models when you need more control.
+      </p>
+      <div class="hero-actions" id="get-started">
+        <a class="button button-primary" href="https://docs.bokeh.org/en/latest/docs/first_steps.html">
+          Get started <span aria-hidden="true">→</span>
+        </a>
+        <a class="button button-secondary" href="https://docs.bokeh.org/en/latest/docs/examples.html">Explore examples</a>
+      </div>
 
-{% include scenarios.html %}
+      <div class="install-picker" data-install-picker>
+        <div class="install-tabs" role="tablist" aria-label="Choose a package manager">
+          <button class="install-tab" id="install-tab-pip" type="button" role="tab"
+            aria-controls="install-command-panel" aria-selected="true" tabindex="0"
+            data-command="pip install bokeh">pip</button>
+          <button class="install-tab" id="install-tab-uv" type="button" role="tab"
+            aria-controls="install-command-panel" aria-selected="false" tabindex="-1"
+            data-command="uv add bokeh">uv</button>
+          <button class="install-tab" id="install-tab-conda" type="button" role="tab"
+            aria-controls="install-command-panel" aria-selected="false" tabindex="-1"
+            data-command="conda install bokeh">conda</button>
+        </div>
+        <div class="install-command" id="install-command-panel" role="tabpanel" aria-labelledby="install-tab-pip">
+          <span aria-hidden="true">$</span>
+          <code>pip install bokeh</code>
+          <button type="button">Copy</button>
+        </div>
+      </div>
 
-{% include showcase.html %}
+      <ul class="proof-list" aria-label="Bokeh highlights">
+        <li>Python-native</li>
+        <li>No JavaScript required</li>
+        <li>BSD licensed</li>
+      </ul>
+    </div>
 
-{% include connect.html %}
+    <div class="hero-mosaic-wrap">
+      <div class="hero-mosaic-label"><span></span>Selected examples</div>
+      <div class="hero-mosaic" aria-label="A selection of Bokeh examples">
+        <a class="hero-shot hero-shot-featured" href="https://demo.bokeh.org/crossfilter">
+          <img src="/img/modern/hero-crossfilter.png" alt="Bokeh Crossfilter application with controls and an interactive scatter plot" width="300" height="300">
+          <span class="hero-shot-caption"><span>Server app</span><strong>Crossfilter dashboard</strong></span>
+          <span class="hero-shot-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="hero-shot" href="https://docs.bokeh.org/en/latest/docs/examples/topics/geo/texas_hover_map.html">
+          <img src="/img/modern/hero-geo.png" alt="Bokeh choropleth map of Texas counties with a hover tooltip" width="300" height="300">
+          <span class="hero-shot-caption"><span>Geospatial</span><strong>Interactive choropleth</strong></span>
+          <span class="hero-shot-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="hero-shot" href="https://docs.bokeh.org/en/latest/docs/examples/styling/mathtext/latex_bessel.html">
+          <img src="/img/modern/hero-bessel.png" alt="Bokeh plot of Bessel functions with a LaTeX equation, mathematical labels, and axis notation" width="300" height="300">
+          <span class="hero-shot-caption"><span>Scientific</span><strong>Math and LaTeX</strong></span>
+          <span class="hero-shot-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="hero-shot" href="https://docs.bokeh.org/en/latest/docs/examples/topics/timeseries/candlestick.html">
+          <img src="/img/modern/hero-timeseries.png" alt="Bokeh candlestick chart showing Microsoft stock prices" width="300" height="300">
+          <span class="hero-shot-caption"><span>Time series</span><strong>Market series</strong></span>
+          <span class="hero-shot-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="hero-shot" href="https://docs.bokeh.org/en/latest/docs/examples/topics/graph/from_networkx.html">
+          <img src="/img/modern/hero-network-graph.png" alt="A Bokeh network graph created from a NetworkX graph" width="300" height="300">
+          <span class="hero-shot-caption"><span>Graph data</span><strong>Network graph</strong></span>
+          <span class="hero-shot-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="hero-shot" href="https://demo.bokeh.org/population">
+          <img src="/img/modern/hero-population.png" alt="Bokeh server application showing an interactive population pyramid and projected trend" width="300" height="300">
+          <span class="hero-shot-caption"><span>Server app</span><strong>Population explorer</strong></span>
+          <span class="hero-shot-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="path-section section" aria-labelledby="paths-title">
+  <div class="section-heading">
+    <p class="section-kicker">Common workflows</p>
+    <h2 id="paths-title">Use Bokeh <span>where you already work.</span></h2>
+    <p>Build plots in Jupyter, publish them in web pages, or add Python callbacks with the Bokeh server.</p>
+  </div>
+
+  <div class="path-grid">
+    <article class="path-card path-card-teal">
+      <div class="path-meta"><span>01</span><span>Jupyter</span></div>
+      <div class="path-visual path-visual-real">
+        <img src="/img/modern/example-jupyterlab.png" alt="A Bokeh ridge plot rendered inline below Python code in JupyterLab" width="300" height="300">
+      </div>
+      <h3>Explore data in notebooks</h3>
+      <p>Display interactive plots beside your analysis in classic Jupyter notebooks and JupyterLab.</p>
+      <a href="https://docs.bokeh.org/en/latest/docs/user_guide/output/jupyter.html">Use Bokeh in Jupyter <span aria-hidden="true">↗</span></a>
+    </article>
+
+    <article class="path-card path-card-coral">
+      <div class="path-meta"><span>02</span><span>Standalone</span></div>
+      <div class="path-visual path-visual-real">
+        <div class="publish-page-preview" role="img" aria-label="An interactive Bokeh time series embedded in the flow of an editorial webpage">
+          <div class="publish-page-sheet" aria-hidden="true">
+            <div class="publish-page-header"><strong>FIELD NOTES</strong><span>Analysis&nbsp;&nbsp; Methods&nbsp;&nbsp; About</span></div>
+            <div class="publish-page-body">
+              <div class="publish-page-copy">
+                <span>DATA JOURNAL · 8 MIN</span>
+                <strong>A decade in motion</strong>
+                <p>Readers can inspect the full series and change the visible range in the chart.</p>
+              </div>
+              <div class="publish-page-chart">
+                <img src="/img/modern/example-range-tool.png" alt="" width="300" height="300">
+                <span>Drag the lower range to explore</span>
+              </div>
+            </div>
+            <div class="publish-page-continuation"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </div>
+      <h3>Publish anywhere</h3>
+      <p>Save a plot as standalone HTML or embed it in an existing web page. A Python server is not required.</p>
+      <a href="https://docs.bokeh.org/en/latest/docs/user_guide/output/embed.html">Publish and embed <span aria-hidden="true">↗</span></a>
+    </article>
+
+    <article class="path-card path-card-gold">
+      <div class="path-meta"><span>03</span><span>Bokeh server</span></div>
+      <div class="path-visual path-visual-real">
+        <img src="/img/modern/example-dask-dashboard.gif" alt="The animated Dask diagnostic dashboard built with Bokeh" width="300" height="300">
+      </div>
+      <h3>Build connected applications</h3>
+      <p>Use the Bokeh server when browser events need to run Python code or update live data.</p>
+      <a href="https://docs.bokeh.org/en/latest/docs/user_guide/server.html">Build a Bokeh app <span aria-hidden="true">↗</span></a>
+    </article>
+  </div>
+</section>
+
+<section class="code-section" id="why-bokeh">
+  <div class="code-section-inner">
+    <div class="code-intro">
+      <p class="section-kicker section-kicker-light">Python to the browser</p>
+      <h2>Write familiar Python. Ship an interactive browser graphic.</h2>
+      <p>Bokeh handles browser-side rendering and includes tools for pan, zoom, hover, and selection.</p>
+      <a href="https://docs.bokeh.org/en/latest/docs/first_steps.html">See the first steps <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="code-window" aria-label="Example Bokeh Python code">
+      <div class="window-bar">
+        <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span>first_plot.py</span><span>Python</span>
+      </div>
+      <pre><code><span class="code-muted">01</span> <span class="code-keyword">from</span> bokeh.plotting <span class="code-keyword">import</span> figure, show
+<span class="code-muted">02</span>
+<span class="code-muted">03</span> x = [1, 2, 3, 4, 5]
+<span class="code-muted">04</span> y = [6, 7, 2, 4, 5]
+<span class="code-muted">05</span>
+<span class="code-muted">06</span> p = figure(<span class="code-string">&quot;A first Bokeh plot&quot;</span>)
+<span class="code-muted">07</span> p.line(x, y, line_width=<span class="code-number">3</span>)
+<span class="code-muted">08</span> p.scatter(x, y, size=<span class="code-number">9</span>)
+<span class="code-muted">09</span> show(p)</code></pre>
+      <div class="code-status"><span></span>Output ready in your browser</div>
+    </div>
+  </div>
+</section>
+
+<section class="capability-section section" aria-labelledby="capabilities-title">
+  <div class="capability-heading">
+    <div>
+      <p class="section-kicker">Bokeh at a glance</p>
+      <h2 id="capabilities-title">Built for real analytical work.</h2>
+    </div>
+    <p>Use a few lines of bokeh.plotting for a first chart, or assemble plots, widgets, and layouts for a custom application.</p>
+  </div>
+  <div class="capability-list">
+    <article><span class="capability-number">A</span><h3>Built-in interaction</h3><p>Plots include tools for pan, zoom, hover, selection, linking, filtering, and editable data.</p></article>
+    <article><span class="capability-number">B</span><h3>High-level and low-level APIs</h3><p>Start with bokeh.plotting, then work directly with layouts, widgets, annotations, models, themes, or extensions.</p></article>
+    <article><span class="capability-number">C</span><h3>Streaming and larger data</h3><p>Stream or patch data without replacing a full data source. Supported glyphs can use WebGL acceleration.</p></article>
+    <article><span class="capability-number">D</span><h3>Several ways to publish</h3><p>Display plots in notebooks, save standalone HTML, embed components in a web app, or run a Bokeh server.</p></article>
+  </div>
+</section>
+
+<section class="example-section section" id="examples">
+  <div class="example-heading">
+    <div><p class="section-kicker">Examples</p><h2>See Bokeh working with real data.</h2></div>
+    <a href="https://docs.bokeh.org/en/latest/docs/examples.html">View the full gallery <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="example-grid">
+    <a class="example-card example-card-wide" href="https://docs.bokeh.org/en/latest/docs/examples/topics/stats/splom.html">
+      <div class="example-art example-art-screenshot example-art-linked-real">
+        <img src="/img/modern/example-splom.png" alt="A Bokeh scatter plot matrix of linked Palmer penguin measurements" width="300" height="300">
+      </div>
+      <div class="example-copy">
+        <div><span>Linked selections</span><span>SPLOM</span></div>
+        <h3>Link selections across a scatter plot matrix.</h3>
+        <p>Select penguin measurements in one plot and Bokeh applies the selection to each view that shares the same data source.</p>
+      </div>
+    </a>
+    <a class="example-card" href="https://docs.bokeh.org/en/latest/docs/examples/plotting/airports_map.html">
+      <div class="example-art example-art-screenshot example-art-geo-real">
+        <img src="/img/modern/example-airports-map.png" alt="Bokeh map of high-elevation US airports plotted over CartoDB tiles" width="760" height="430">
+      </div>
+      <div class="example-copy">
+        <div><span>Geospatial</span><span>TileRenderer</span></div>
+        <h3>Plot data over map tiles.</h3>
+      </div>
+    </a>
+    <a class="example-card" href="https://docs.bokeh.org/en/latest/docs/user_guide/basic/data.html#streaming">
+      <div class="example-art example-art-screenshot example-art-streaming-real">
+        <img src="/img/modern/example-streaming.gif" alt="Animated Bokeh financial chart updating with a live stream of new values" width="520" height="380" loading="lazy">
+      </div>
+      <div class="example-copy">
+        <div><span>Streaming data</span><span>Bokeh server</span></div>
+        <h3>Update a plot as new data arrives.</h3>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="showcase-section" aria-labelledby="showcase-title">
+  <div class="showcase-inner">
+    <div class="showcase-heading">
+      <div><p class="section-kicker section-kicker-light">User showcase</p><h2 id="showcase-title">Projects that use Bokeh.</h2></div>
+      <p>Dask, Panel, Mistic, and ArviZ use Bokeh for browser graphics, interaction, or application infrastructure.</p>
+    </div>
+    <div class="showcase-grid">
+      <a class="showcase-card showcase-card-gold" href="https://docs.dask.org/en/latest/dashboard.html">
+        <div class="showcase-card-meta"><span>01</span><span>Distributed computing</span></div>
+        <div class="showcase-project"><span aria-hidden="true">D</span><strong>Dask</strong></div>
+        <h3>Monitor distributed work.</h3>
+        <p>The Dask diagnostics dashboard uses Bokeh to show task progress, memory, CPU, data transfer, and worker activity.</p>
+        <span class="showcase-link">Visit project <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="showcase-card showcase-card-teal" href="https://panel.holoviz.org/">
+        <div class="showcase-card-meta"><span>02</span><span>Application framework</span></div>
+        <div class="showcase-project"><span aria-hidden="true">P</span><strong>Panel</strong></div>
+        <h3>Build Python dashboards and applications.</h3>
+        <p>Panel uses Bokeh browser models and the Bokeh server with its own layouts, widgets, and application APIs.</p>
+        <span class="showcase-link">Visit project <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="showcase-card showcase-card-coral" href="https://github.com/MathOnco/Mistic">
+        <div class="showcase-card-meta"><span>03</span><span>Biomedical imaging</span></div>
+        <div class="showcase-project"><span aria-hidden="true">M</span><strong>Mistic</strong></div>
+        <h3>Explore multiplexed tissue images.</h3>
+        <p>Mistic uses Bokeh canvases and linked interactions to compare multiplex images and investigate image t-SNE embeddings.</p>
+        <span class="showcase-link">Visit project <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="showcase-card showcase-card-violet" href="https://python.arviz.org/projects/plots/en/stable/api/backend/bokeh.html">
+        <div class="showcase-card-meta"><span>04</span><span>Bayesian analysis</span></div>
+        <div class="showcase-project"><span aria-hidden="true">A</span><strong>ArviZ</strong></div>
+        <h3>Inspect Bayesian model diagnostics.</h3>
+        <p>ArviZ offers a Bokeh plotting backend for interactive posterior analysis, statistical graphics, and notebook work.</p>
+        <span class="showcase-link">Visit project <span aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="community-section">
+  <div class="community-inner">
+    <div class="community-mark" aria-hidden="true"><img src="/img/modern/bokeh-icon.svg" alt="" width="72" height="72"></div>
+    <p class="section-kicker section-kicker-light">Open source</p>
+    <h2>Open source visualization,<br>driven by community.</h2>
+    <p>Bokeh is a fiscally sponsored NumFOCUS project. Contributors build and maintain it on GitHub.</p>
+    <div class="community-actions">
+      <a href="https://discourse.bokeh.org/"><span class="community-action-label">Join the community</span><span aria-hidden="true">↗</span></a>
+      <a href="https://github.com/bokeh/bokeh"><span class="community-action-label">Contribute on GitHub</span><span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
