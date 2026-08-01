@@ -39,11 +39,11 @@ make build JEKYLL_IMAGE=jekyll/jekyll:pages
 
 - `index.html` — front page content
 - `branding/index.html` — brand resources page
-- `_layouts/modern.html` — shared document structure for the home and branding pages
-- `_includes/modern-*.html` — shared head, header, and footer
 - `css/modern.css` — home and branding page styles
 - `js/modern.js` — installer tabs and copy-button behavior
 - `img/` — screenshots, animations, and Bokeh brand assets
+- `_layouts/modern.html` — shared document structure for the home and branding pages
+- `_includes/modern-*.html` — shared head, header, and footer
 
 ## Deployment
 
