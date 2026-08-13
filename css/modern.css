@@ -1219,11 +1219,14 @@ button {
   line-height: 1.7;
 }
 
-.example-section {
-  padding-top: 80px;
+.capability-section {
   background: var(--paper);
   box-shadow: 0 0 0 100vmax var(--paper);
   clip-path: inset(0 -100vmax);
+}
+
+.example-section {
+  padding-top: 80px;
 }
 
 .example-heading {
@@ -1638,7 +1641,7 @@ button {
 
 .community-section {
   overflow: hidden;
-  background: var(--paper);
+  background: var(--warm);
   color: var(--ink);
 }
 
