@@ -38,6 +38,7 @@ make build JEKYLL_IMAGE=jekyll/jekyll:pages
 ## Site structure
 
 - `index.html` — front page content
+- `404.html` — self-contained not-found page shared across Bokeh sites
 - `branding/index.html` — brand resources page
 - `css/modern.css` — home and branding page styles
 - `js/modern.js` — installer tabs and copy-button behavior
