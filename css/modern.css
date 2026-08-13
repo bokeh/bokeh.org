@@ -1221,6 +1221,9 @@ button {
 
 .example-section {
   padding-top: 80px;
+  background: var(--paper);
+  box-shadow: 0 0 0 100vmax var(--paper);
+  clip-path: inset(0 -100vmax);
 }
 
 .example-heading {
@@ -1635,7 +1638,7 @@ button {
 
 .community-section {
   overflow: hidden;
-  background: var(--plum-800);
+  background: var(--charcoal);
   color: var(--warm);
 }
 
