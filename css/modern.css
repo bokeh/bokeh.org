@@ -1638,8 +1638,8 @@ button {
 
 .community-section {
   overflow: hidden;
-  background: var(--charcoal);
-  color: var(--warm);
+  background: var(--paper);
+  color: var(--ink);
 }
 
 .community-inner {
@@ -1680,8 +1680,12 @@ button {
 .community-inner > p:not(.section-kicker) {
   max-width: min(610px, calc(100% - 360px));
   margin: 28px 0 0;
-  color: rgba(247, 243, 236, 0.68);
+  color: rgba(33, 31, 32, 0.62);
   line-height: 1.75;
+}
+
+.community-section .section-kicker-light {
+  color: var(--coral-dark);
 }
 
 .community-actions {
@@ -1694,12 +1698,13 @@ button {
   display: inline-flex;
   align-items: baseline;
   gap: 13px;
+  color: var(--plum-700);
   font-size: 13px;
   font-weight: 700;
 }
 
 .community-action-label {
-  border-bottom: 1px solid rgba(247, 243, 236, 0.58);
+  border-bottom: 1px solid rgba(42, 23, 35, 0.34);
   padding-bottom: 5px;
 }
 
