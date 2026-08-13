@@ -272,7 +272,7 @@ button {
   max-width: 640px;
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(48px, 5vw, 76px);
+  font-size: clamp(46px, 4.6vw, 70px);
   font-weight: 400;
   letter-spacing: -0.046em;
   line-height: 0.98;
@@ -2195,7 +2195,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: 55px;
+    font-size: 52px;
   }
 
   .code-section-inner {
@@ -2265,7 +2265,7 @@ footer {
 
   .hero h1 {
     max-width: 720px;
-    font-size: clamp(52px, 8vw, 72px);
+    font-size: clamp(48px, 6vw, 54px);
   }
 
   .hero-demo {
@@ -2371,7 +2371,7 @@ footer {
   }
 
   .hero h1 {
-    font-size: 49px;
+    font-size: 46px;
   }
 
   .hero-lede {
