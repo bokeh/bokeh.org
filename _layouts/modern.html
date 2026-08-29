@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include modern-head.html %}
+  </head>
+  <body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include modern-header.html %}
+    <main id="main-content">
+      {{ content }}
+    </main>
+    {% include modern-footer.html %}
+    {% include analytics.html %}
+    <script src="/js/modern.js" defer></script>
+  </body>
+</html>
