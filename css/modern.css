@@ -523,6 +523,10 @@ button {
     transform 220ms ease;
 }
 
+.hero-shot-spectrum img {
+  object-position: 30% center;
+}
+
 .hero-shot::after {
   position: absolute;
   inset: 0;
